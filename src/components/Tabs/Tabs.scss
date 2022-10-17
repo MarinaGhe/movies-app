@@ -9,18 +9,21 @@
       transition: all 0.3s ease;
       margin: 5px 10px;
       color: #303B42;
+      transition: background-color 0.3s ease, color 0.3s ease;
 
       &:first-child {
         margin-left: 0;
       }
 
       &:hover {
-        background-color: #ddd;
+        background-color: rgb(133, 177, 204, 1);
+        color: #fff
       }
     }
 
     &--active{
-      color: #00A4FF;
+      background-color: rgb(133, 177, 204, 1);
+      color: #fff;
     }
   }
 }
