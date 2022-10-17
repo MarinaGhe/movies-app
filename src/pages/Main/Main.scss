@@ -1,0 +1,71 @@
+.main {
+  margin: 3rem;
+
+  @media (max-width: 600px){
+    margin: 3rem 1rem;
+  }
+
+  &__search {
+    & input {
+      width: calc(100% - 100px);
+    }
+  }
+
+  &__tabs {
+    & .tab__list {
+      margin: 3rem 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(max(280px, 100%/6), 1fr));
+      grid-gap: 3rem;
+
+      @media (max-width: 600px){
+        grid-gap: 1rem;
+        margin: 1rem 0;
+      }
+
+      &--item {
+        border-radius: 30px;
+        margin: 0;
+        height: 50px;
+        font-size: 1em;
+        font-weight: bold;
+      }
+    } 
+  }
+
+  &__scroll {
+    position: absolute;
+    top:0.5rem;
+    right: 0.5rem;
+    z-index: 1;
+  }
+
+  &__reload {
+    margin-top: 5px;
+  }
+}
+
+.centered-text {
+  text-align: center;
+
+  &--spaced{
+    padding: 10px 0;
+  }
+}
+
+.text--red {
+  color: #ef5350;
+}
+
+.modal__error {
+  width: 300px; 
+  min-height: 100px;
+
+  &--message {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+
+

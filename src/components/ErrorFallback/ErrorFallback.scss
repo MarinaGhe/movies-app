@@ -1,0 +1,24 @@
+.error {
+  margin: 6rem;
+  padding: 2rem 1.5rem;
+  background-color: #f8d7da;
+  border-radius: 3px;
+
+  &__title {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+
+  &__action {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}

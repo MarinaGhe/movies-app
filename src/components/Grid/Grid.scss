@@ -1,0 +1,5 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(280px, 100%/6), 1fr));
+  grid-gap: 3rem;
+}

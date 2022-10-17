@@ -1,0 +1,26 @@
+.tab {
+  &__list {
+    &--item {
+      cursor: pointer;
+      background-color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+      margin: 5px 10px;
+      color: #303B42;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+
+    &--active{
+      color: #00A4FF;
+    }
+  }
+}

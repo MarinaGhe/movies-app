@@ -1,0 +1,29 @@
+.skeleton {
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.11);
+  height: auto;
+  transform-origin: 0 55%;
+  border-radius: 4px/6.7px;
+  -webkit-animation: loader 1.5s ease-in-out 0.5s infinite;
+  animation: loader 1.5s ease-in-out 0.5s infinite;
+
+  &::before {
+    content: "\00a0";
+  }
+
+  &--circular{
+    border-radius: 50%;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+      opacity: 0.4;
+  }
+  100% {
+      opacity: 1;
+  }
+}
