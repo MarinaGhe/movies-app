@@ -6,3 +6,5 @@ export const SEARCH_DEBOUNCE_TIMER = 1000
 export const GENERAL_ERROR = 'An error occured'
 export const ABORTED_ERROR = 'aborted'
 export const LONGEST_MOVIE_TITLE_LENGTH = 191
+export const IMAGE_INTRINSIC_WIDTH = 500
+export const IMAGE_INTRINSIC_HEIGHT = 281

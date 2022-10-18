@@ -1,7 +1,7 @@
 import { forwardRef, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { truncate, formatDate } from 'tools/utility'
-import { ADD_FAVOURITE, REMOVE_FAVOURITE } from 'tools/constants'
+import { ADD_FAVOURITE, REMOVE_FAVOURITE, IMAGE_INTRINSIC_HEIGHT, IMAGE_INTRINSIC_WIDTH } from 'tools/constants'
 import { addToFavourites } from 'features/MovieGrid/popularMoviesSlice'
 import { removeFromFavourites, addMovieToList } from 'features/MovieGrid/favouriteMoviesSlice'
 import Modal from 'components/Modal/Modal'
@@ -102,8 +102,8 @@ const Card = forwardRef((props, ref) => {
           <div className={`card__error ${error ? 'card__error--visible' : ''}`}>{error}</div>
         }
         <img
-          width='500'
-          height='281'
+          width={IMAGE_INTRINSIC_WIDTH}
+          height={IMAGE_INTRINSIC_HEIGHT}
           alt='Movie poster'
           loading="lazy"
           className='card__media--image'
